@@ -5,7 +5,6 @@
   },
   "name": "alchemymusic",
   "version": "1.0.0",
-  "main": "index.js",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "abortcontroller-polyfill": "^1.7.3",
