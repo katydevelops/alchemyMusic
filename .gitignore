@@ -4,3 +4,5 @@ parcel-cache
 cache-parcel
 .cache
 .parcel-cache
+.parcel-cache/data.mdb 
+.cache/data/data.mdb
