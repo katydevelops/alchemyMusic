@@ -1,0 +1,177 @@
+$body-bg: rgb(41, 39, 39);
+$dark-theme: true !default;
+$primary-color: #f8e3ea !default;
+$accent-color: #6d5f75 !default;
+$font-family-sans-serif: "Poppins", Helvetica, Arial, sans-serif;
+$link-color: #f8e3ea;
+$hover-color: darken($link-color, 10%);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+body {
+    color: $primary-color;
+    background-color: $body-bg;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: radial-gradient(900px circle at 50%, #3d3838, transparent 80%);
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+#sidebar {
+    background-color: $body-bg;
+}
+
+.textani {
+    font-family: Neonderthaw;
+    position: relative;
+    border-right: 1px dotted $primary-color;
+    font-size: 55px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.animation-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+        blinkTextCursor 1ms steps(40);
+    animation-iteration-count: 1.0;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: $primary-color;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.title-header {
+    display: d-flex;
+    align-items: center;
+}
+
+.titleimage {
+    animation-name: fadein;
+    animation-duration: 2s;
+    will-change: transform;
+    transition: transform 300ms;
+    opacity: 1.5;
+}
+
+.titleimage:hover {
+    transition: transform 125ms;
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.imghover {
+    will-change: transform;
+    transition: transform 450ms;
+    opacity: 0.5;
+}
+
+.imghover:hover {
+    transition: transform 125ms;
+    transform: translateY(-10px);
+    opacity: 0.9;
+}
+
+.img-thumbnail {
+    border: 0;
+}
+
+input {
+    color: rgba(245, 242, 242, 0.772)
+}
+
+.select-wrapper+label {
+    color: rgba(245, 242, 242, 0.772)
+}
+
+.form-control {
+    color: rgba(245, 242, 242, 0.772);
+}
+
+.form-control:focus {
+    color: rgba(245, 242, 242, 0.772);
+}
+
+.card-body {
+    background-color: $body-bg;
+}
+
+.card-img-top {
+    height: 250px;
+    width: 340px;
+    will-change: transform;
+    transition: transform 450ms;
+    opacity: 0.8;
+}
+
+.card-img-top:hover {
+    transition: transform 125ms;
+    opacity: 1;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover-color;
+        border-bottom: 1px solid $hover-color;
+        text-decoration: none;
+    }
+}
+
+#frontimg {
+    height: 200px;
+}
+
+.box {
+    animation: grow-and-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes grow-and-shrink {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
