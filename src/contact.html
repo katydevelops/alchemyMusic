@@ -3,7 +3,6 @@
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Linking SCSS file directly because using Parcel Bundler -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
@@ -14,24 +13,30 @@
 <!-- Toggler for Offcanvas-->
 <section class="mb-3 mx-3">
     <nav class="navbar navbar-dark sticky-top">
-        <div class="pos-f-t sticky-top"">
+        <div class="pos-f-t sticky-top">
             <nav class="navbar navbar-dark sticky-top">
                 <a href="#sidebar" class="navbar-toggler" type="button" role="button" data-bs-toggle="offcanvas" aria-controls="sidebar">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </a>
-                <span class="titleimage">
-                    <img class="img-fluid mx-4" src="../assets/titleasset.png">
+                    <div class="col-xs-6 mx-4">
+                        <span class="titleimage">
+                            <img class="img-fluid" src="../assets/titleasset.png">
+                        </span>
+                    </div>
                 </span>
             </nav>
         </div>
-    </nav>
+    </div>
 </section>
+
+
 <hr class="mb-4" />
     <section class="contact-header">
         <p class="d-flex justify-content-center align-items-center">
-            <span class="me-3 h2">Drop us a line below and send us your music!</span>
+            <span class="me-3 fs-1">Send us your music!</span>
         </p>
     </section>
+
 <hr class="mb-4" />
 <div class="jumbotron jumbotron-fluid">
     <div class="container-fluid pt-5 my-5">
